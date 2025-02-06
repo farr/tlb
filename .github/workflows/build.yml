@@ -11,5 +11,5 @@ jobs:
                 git checkout --orphan ${{ github.ref }}-pdf
                 git rm -rf .
                 git add -f tlb.pdf
-                git -c user.name="Will M. Farr" -c user.email="wfarr@flatironinstitute.org" commut -m "Building paper"
+                git -c user.name="Will M. Farr" -c user.email="wfarr@flatironinstitute.org" commit -m "Building paper"
                 git push -q -f origin ${{ github.ref }}-pdf
