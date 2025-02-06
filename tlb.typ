@@ -1,8 +1,10 @@
 #set math.equation(numbering: "(1)")
-#set text(font: "New Computer Modern")
+#set text(font: "New Computer Modern", size: 12pt)
 #set par(justify: true)
+#set page(numbering: "-- 1 --")
+#set heading(numbering: "1.")
 
-#align(center, text(20pt)[
+#align(center, text(24pt)[
   *A Sufficient Condition for two Gravitational Waveforms to Furnish Equivalent Parameter Estimates*
 ])
 
@@ -14,10 +16,7 @@
     #link("mailto:", "wfarr@flatironinstitute.org")
 ]])
 
-#align(center, [
-    *Abstract*\
-    I derive a condition on the difference between two gravitational waveforms that is sufficient to guarantee that they will furnish equivalent parameter estimates in a Bayesian analysis.  The condition is that the log-likelihood difference between the two waveforms at the same point in parameter space is small.  I show that this condition is equivalent to the difference between the two waveforms being small compared to the signal-to-noise ratio of the waveforms; the condition does not require that either waveform be a good model for any signal in the data.
-])
+#text(10pt)[*Abstract*---I derive a condition on the difference between two gravitational waveforms that is sufficient to guarantee that they will furnish equivalent parameter estimates in a Bayesian analysis.  The condition is that the log-likelihood difference between the two waveforms at the same point in parameter space is small.  I show that this condition is equivalent to the difference between the two waveforms being small compared to the signal-to-noise ratio of the waveforms; the condition does not require that either waveform be a good model for any signal in the data.]
 
 = Introduction
 
