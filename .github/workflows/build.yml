@@ -7,7 +7,9 @@ jobs:
             - uses: actions/checkout@v4
             - uses: typst-community/setup-typst@v3
             - run: typst compile tlb.typ tlb.pdf
-            - uses: actions/upload-artifact@v4
-              with:
-                  name: tlb
-                  path: tlb.pdf
+            - run: |
+                git checkout --orphan ${{ github.ref }}-pdf
+                git rm -rf .
+                git add -f tlb.pdf
+                git -c user.name="Will M. Farr" -c user.email="wfarr@flatironinstitute.org" commut -m "Building paper"
+                git push -q -f origin ${{ github.ref }}-pdf
