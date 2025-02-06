@@ -8,7 +8,7 @@ jobs:
             - uses: typst-community/setup-typst@v3
             - run: typst compile tlb.typ tlb.pdf
             - run: |
-                git checkout --orphan ${{ github.ref }}-pdf
+                git checkout --orphan ${{ github.ref_name }}-pdf
                 git rm -rf .
                 git add -f tlb.pdf
                 git -c user.name="Will M. Farr" -c user.email="wfarr@flatironinstitute.org" commit -m "Building paper"
