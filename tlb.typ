@@ -1,6 +1,5 @@
 #set math.equation(numbering: "(1)")
 #set text(font: "New Computer Modern")
-#show raw: set text(font: "New Computer Modern Mono")
 #set par(justify: true)
 
 = Bounding the Log Likelihood Difference
