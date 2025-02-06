@@ -2,6 +2,27 @@
 #set text(font: "New Computer Modern")
 #set par(justify: true)
 
+#align(center, text(20pt)[
+  *A Sufficient Condition for two Gravitational Waveforms to Furnish Equivalent Parameter Estimates*
+])
+
+#align(center, [
+    Will M. Farr \
+    #text(10pt)[Department of Physics and Astronomy, Stony Brook University, Stony Brook NY 11790, USA \
+    Center for Computational Astrophysics, Flatiron Institute, New York NY 10010, USA \
+    #link("mailto:", "will.farr@stonybrook.edu") \
+    #link("mailto:", "wfarr@flatironinstitute.org")
+]])
+
+#align(center, [
+    *Abstract*\
+    I derive a condition on the difference between two gravitational waveforms that is sufficient to guarantee that they will furnish equivalent parameter estimates in a Bayesian analysis.  The condition is that the log-likelihood difference between the two waveforms at the same point in parameter space is small.  I show that this condition is equivalent to the difference between the two waveforms being small compared to the signal-to-noise ratio of the waveforms; the condition does not require that either waveform be an especially good model for any signal in the data.
+])
+
+= Introduction
+
+TODO: dump some references here.
+
 = Bounding the Log Likelihood Difference
 
 Consider the difference in log-likelihood between two waveforms $g$ and $h$ given data $d$ (we will imagine that $g$ and $h$ are two different _models_ for the waveform that is actually contained in $d$, but our argument here is fully general).  We can write 
